@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title>Google - Reproduction</title>
+		<style>
+			a { color: gray; text-decoration: none; }
+			a:hover { text-decoration: underline; }
+			body { text-align: center; margin: 0; padding: 0; font-family: Helvetica, Sans-serif; }
+			button { width: 100px; height: 30px; margin-right: 15px; color: black; font-size: 10px; }
+			
+			#top-nav { width: 100%; height: 50px; background-color: white; text-align: right; }
+				#top-nav ul#nav { margin: 10px 50px 0 0; }
+				#top-nav ul#nav li { display: inline; font-size: 13px; margin-left: 10px; }
+			#main-content { width: 600px; margin: 7% auto 0; }
+			#search-box { margin: 10px auto 20px; font-size: 14px; padding: 5px;}
+			#bottom-nav { position: fixed; bottom: 0; width: 100%; height: 40px; background-color: #E8E8E8; text-align: left; font-size: 12px; font-weight: bold; }
+				#bottom-nav ul li { display: inline; margin-right: 10px;}
+		</style>
+		<script type="text/javascript">
+			function sums() {
+				var sum = 0;
+				
+				for (var i = 1000; i >= 0; i--)
+				{
+				    if(i%3 === 0 || i%5 ===0)
+				        sum+= i;
+				}
+				alert(sum);
+			}
+
+			function fib() {
+				var sum = 0;
+				var fib = [];
+				
+				fib[0] = 0;
+				fib[1] = 1;
+
+				for (var i = 2; i <= 4000000; i++)
+				{
+					fib[i] = fib[i-2] + fib[i-1];
+
+					if(fib[i] % 2 === 0)
+						sum+= fib[i];
+				}
+
+				alert(sum);
+			}
+
+			function prime() {
+				
+				while
+				var sum = 0;
+				var fib = [];
+				
+				fib[0] = 0;
+				fib[1] = 1;
+
+				for (var i = 2; i <= 4000000; i++)
+				{
+					fib[i] = fib[i-2] + fib[i-1];
+
+					if(fib[i] % 2 === 0)
+						sum+= fib[i];
+				}
+
+				alert(sum);
+			}
+		</script>
+
+	</head>
+	<body>
+		<div id="top-nav">
+			<ul id="nav">
+				<li><a href="#">+Your Name</a></li>
+				<li><a href="#">Gmail</a></li>
+				<li><a href="#">Images</a></li>
+			</ul>
+		</div>
+		<div style="clear: both;" />
+		<div id="main-content">
+			<img src="logo.png" width="250px" />
+			<br />
+			<input id="search-box" type="textbox" size="65" />
+			<div id="buttons">
+				<button name="search" type="Submit" onclick="fib()">Google Search</button>
+				<button name="lucky" type="Submit">I'm Feeling Lucky</button>
+			</div>
+		</div>
+		<div id="bottom-nav">
+			<ul>
+				<li><a href="#">Advertising</a></li>
+				<li><a href="#">Business</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
