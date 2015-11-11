@@ -7,4 +7,4 @@ def translate(text)
 
 	capitalized_words.first.capitalize!
 	return capitalized_words.join(' ')
-end
+end 
